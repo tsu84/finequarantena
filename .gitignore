@@ -1,6 +1,8 @@
 ## Project
 dist/*
 
+site.deploy.js
+
 ## Node.js
 lib-cov
 *.seed

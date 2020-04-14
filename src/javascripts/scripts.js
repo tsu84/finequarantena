@@ -61,3 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementsByClassName('lds-ellipsis')[0].style.display = 'none';
   document.getElementById('text').style.display = 'block';
 });
+
+window.addEventListener('focus', () => {
+  srvTime();
+});
