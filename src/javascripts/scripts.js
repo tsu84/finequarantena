@@ -58,6 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('date').innerHTML = `${getWeekDay(end)}, ${new Intl.DateTimeFormat('it-IT', options).format(end)}`;
   srvTime();
   setInterval(updateCountdown, 1000);
+  setInterval(srvTime, 30 * 1000);
   document.getElementsByClassName('lds-ellipsis')[0].style.display = 'none';
   document.getElementById('text').style.display = 'block';
 });
