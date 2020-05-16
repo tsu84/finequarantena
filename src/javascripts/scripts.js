@@ -1,7 +1,7 @@
 const Countdown = require('countdown');
 const randomColor = require('random-color');
 
-const end = new Date(2020, 5 - 1, 4);
+const end = new Date(2020, 6 - 1, 3);
 let now;
 
 function getWeekDay(date) {
@@ -17,7 +17,7 @@ function getRandomColor() {
 
 function srvTime() {
   const xmlHttp = new XMLHttpRequest();
-  xmlHttp.open('HEAD', window.location.href.toString(), false);
+  xmlHttp.open('HEAD', window.location.href.toString() + new Date().getTime(), false);
   xmlHttp.setRequestHeader('Content-Type', 'text/html');
   xmlHttp.send('');
   now = new Date(xmlHttp.getResponseHeader('Date'));
